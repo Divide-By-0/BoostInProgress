@@ -112,4 +112,4 @@ int XV11Laser::poll(LaserScan& scan)
       //Read start byte for next packet
       boost::asio::read(serial_, boost::asio::buffer(&temp_char,1));	 	  
     }
-}
+} 
