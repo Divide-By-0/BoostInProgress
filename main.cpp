@@ -1,6 +1,6 @@
-#include<GL/gl.h>
-#include<GL/glu.h>
-#include<GL/glut.h>
+//#include<GL/gl.h>
+//#include<GL/glu.h>
+//#include<GL/glut.h>
 
 #include "obstacleDetection.h"
 #include "displayMap.h"
@@ -36,18 +36,18 @@ int main(int argc, char **argv)
   obsDetect.init(argv[1],baud_rate,edge_size,cell_size);
   laserMap.init(num_cells);
 
-  glutInit(&argc,argv);
-  glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
-  glutInitWindowSize(num_cells,num_cells);
-  glutInitWindowPosition(100,100);
-  glutCreateWindow("Map");
+  //glutInit(&argc,argv);                                         GLUT
+  //glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+  //glutInitWindowSize(num_cells,num_cells);
+  //glutInitWindowPosition(100,100);
+  //glutCreateWindow("Map");
 
   laserMap.initDisplay(num_cells,num_cells);
-  // glutReshapeFunc(mapReshapeFunc);
-  glutKeyboardFunc(mapKeyboardFunc);
-  glutDisplayFunc(mapDisplayFunc);
+  //// glutReshapeFunc(mapReshapeFunc);  //cut b4
+  //glutKeyboardFunc(mapKeyboardFunc);
+  //glutDisplayFunc(mapDisplayFunc);
 
-  glutMainLoop();
+  //glutMainLoop();
 
   obsDetect.finish();
   return 0;
