@@ -14,3 +14,4 @@ xv11_laser.o: xv11_laser.cpp
 
 clean: 
 	rm *.o *~ detectObstacles
+ 
