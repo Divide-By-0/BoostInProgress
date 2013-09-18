@@ -1,6 +1,6 @@
-#include<GL/gl.h>
-#include<GL/glu.h>
-#include<GL/glut.h>
+//#include<GL/gl.h>
+//#include<GL/glu.h>
+//#include<GL/glut.h>
 
 struct displayMap {
 
@@ -23,11 +23,11 @@ void displayMap::init(int numCells) {
   m_fileid = 0;
 }
 
-void displayMap::initDisplay(int w, int h)
+/*void displayMap::initDisplay(int w, int h)		//Whole Function is OpenGL
 {
   glMatrixMode(GL_PROJECTION);
   glLoadIdentity();
-  glOrtho(0.0, (GLsizei)w, 0.0, (GLsizei)h, -1.0, 1.0);
+  glOrtho(0.0, (GLsizei)w, 0.0, (GLsizei)h, -1.0, 1.0);				
   glMatrixMode(GL_MODELVIEW);
   glLoadIdentity();
 
@@ -35,8 +35,9 @@ void displayMap::initDisplay(int w, int h)
   glShadeModel(GL_FLAT);
   glPixelStorei(GL_UNPACK_ALIGNMENT,1);
 }
+*/
 
-/* void displayMap::reshape(int w, int h) */
+/* void displayMap::reshape(int w, int h) */			//OpenGL Function Previously Commented 		
 /* { */
 /*   glViewport(0,0,(GLsizei)w,(GLsizei)h); */
 /*   glMatrixMode(GL_PROJECTION); */
@@ -78,7 +79,8 @@ void displayMap::display(unsigned char* img)
     m_copy = false;
   }
 
-  // convert img to glImg
+  // 								//converts img to glImg -- unneccesary OpenGL
+  /*
   GLubyte glImg[m_numCells][m_numCells][3];
   for(int i=0; i<m_numCells; i++) {
     for(int j=0; j<m_numCells; j++) {
@@ -95,5 +97,6 @@ void displayMap::display(unsigned char* img)
 
   glFlush();
   glFinish();
+  */
 }
 
