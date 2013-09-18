@@ -64,4 +64,4 @@ class XV11Laser
   boost::asio::serial_port serial_; ///< @brief Actual serial port object for reading/writing to the XV11 Laser Scanner
   uint16_t motor_speed_; ///< @brief current motor speed as reported by the XV11.
 };
-
+ 
