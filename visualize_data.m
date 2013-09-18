@@ -1,4 +1,3 @@
-
 d = load('data.txt');
 
 f = d(:,1);
@@ -19,3 +18,4 @@ plot(x,y,'.');
 plot(x(idxg),y(idxg),'r.');
 axis equal;
 grid on;
+ 
