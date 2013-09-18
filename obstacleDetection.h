@@ -37,4 +37,4 @@ protected:
   LaserScan m_scan;
 
   map2d m_obstacleMap;
-};
+}; 
