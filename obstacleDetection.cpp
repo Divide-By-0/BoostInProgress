@@ -82,4 +82,4 @@ unsigned char* obstacleDetection::getMap() {
 
 void obstacleDetection::finish() {
   m_laser.close();
-}
+} 
